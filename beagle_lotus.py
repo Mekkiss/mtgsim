@@ -31,7 +31,7 @@ def lotus_castable(deck):
     """
     Returns true of we have at least 5 land/ramp after drawing 5 cards.
     """
-    if len([x for x in deck[:11] if x in ['L', 'R']]) > 5:
+    if len([x for x in deck[:11] if x in ['L', 'R']]) >= 5:
         return True
     return False
 
